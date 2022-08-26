@@ -26,11 +26,11 @@ What is this DeepStream pipeline made of?
 
 # Application Architecture
 
-<p align=center>
-    <img src="./media/arch.png" width=500>
-</p>
 
-#Quick Start
+   <center> <img src="./media/arch.png" width=500></center>
+
+
+# Quick Start
 
 # Prerequisites
 
