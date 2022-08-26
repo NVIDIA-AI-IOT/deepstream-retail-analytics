@@ -1,11 +1,11 @@
 
 # Description
 
-This is a sample application to perform inference in a retail scenario using NVIDIA's DeepStream and TAO SDKs. This application can be used to build real-time retail intelligent video analytics applications.This application is based on deepstream-test4 and deepstream-test5. Look for the sample applications at `/opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps`.
+This is a sample application to perform inference in a retail scenario using NVIDIA's DeepStream and TAO SDKs. This application can be used to build real-time retail intelligent video analytics applications.This application is based on deepstream-test4 and deepstream-test5. Look for the sample applications at `/opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps` inside the DeepStream container.
 
 ![](./media/output.gif)
 
-What is the DeepStream pipeline made of?
+What is this DeepStream pipeline made of?
 
 * Primary Detector: PeopleNet PTM from NGC
 * Secondary Detector: Custom classification model trained using TAO toolkit to classify people with and without shopping baskets
@@ -26,9 +26,11 @@ What is the DeepStream pipeline made of?
 
 # Application Architecture
 
-<p align="center">
+<p align=center>
     <img src="./media/arch.png" width=500>
 </p>
+
+#Quick Start
 
 # Prerequisites
 
