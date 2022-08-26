@@ -1,13 +1,15 @@
 
 # Description
 
-This is a sample application to perform inference in a retail scenario using NVIDIA's DeepStream and TAO SDKs. This application can be used to build real-time retail intelligent video analytics applications.This application is based on deepstream-test4 and deepstream-test5. Look for the sample applications at `/opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps` inside the DeepStream container.
+This is a sample application to perform real-time Intelligent Video Analytics (IVA) in a brick and mortar retail environment using NVIDIA DeepStream, TAO, and pre-trained models. DeepStream is used to run DL inference on a video feed inside a store to detect and track customers, and identify whether the detected persons are carrying shopping baskets. The inference output of this Computer Vision (CV) pipeline is streamed, using Kafka, to a Time-Series Database (TSDB) for archival and further processing. A Django app serves a REST-ful API to query insights based on the inference data. We also demonstrate a sample front-end dashboard to quickly visualize the various Key Performance Indicators (KPIs) available through the Django app.
+
+This application is based on deepstream-test4 and deepstream-test5 sample applications included with DeepStream. The architecture diagram below shows how all the components are connected.
 
 ![](./media/output.gif)
 
 What is this DeepStream pipeline made of?
 
-* Primary Detector: PeopleNet PTM from NGC
+* Primary Detector: PeopleNet Pre-Trained Model (PTM) from NGC
 * Secondary Detector: Custom classification model trained using TAO toolkit to classify people with and without shopping baskets
 * Object Tracker: NvDCF tracker
 * Message Converter: Custom message converter to generate custom payload from inference data
@@ -34,9 +36,9 @@ What is this DeepStream pipeline made of?
 
 # Prerequisites
 
-1. Install [NVIDIA drivers](https://www.nvidia.com/download/index.aspx) according to your operating system and GPU
+1. Install the latest [NVIDIA drivers](https://www.nvidia.com/download/index.aspx) for your operating system and GPU.
 
-2. Install NVIDIA container toolkit- Refer to this [README](docs/install_nvidia_container_toolkit.md)
+2. Install Docker and the NVIDIA Container Toolkit - Refer to this [README](docs/install_nvidia_container_toolkit.md).
 
 3. **OPTIONAL:** Install python and pip. Required for front-end only. Can omit if not using front-end.
 
