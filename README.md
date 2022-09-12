@@ -1,4 +1,4 @@
-
+# New Document
 # Description
 
 This is a sample application to perform real-time Intelligent Video Analytics (IVA) in a brick and mortar retail environment using NVIDIA DeepStream, TAO, and pre-trained models. DeepStream is used to run DL inference on a video feed inside a store to detect and track customers, and identify whether the detected persons are carrying shopping baskets. The inference output of this Computer Vision (CV) pipeline is streamed, using Kafka, to a Time-Series Database (TSDB) for archival and further processing. A Django app serves a REST-ful API to query insights based on the inference data. We also demonstrate a sample front-end dashboard to quickly visualize the various Key Performance Indicators (KPIs) available through the Django app.
@@ -117,7 +117,7 @@ What is this DeepStream pipeline made of?
     ```bash
     cd /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps
     git clone https://gitlab-master.nvidia.com/techmarketing/deepstream-retail-analytics.git
-    cd ds-retail-iva
+    cd deepstream-retail-analytics
     git lfs pull
     ```
 
@@ -139,11 +139,11 @@ What is this DeepStream pipeline made of?
 
 * We use a custom message converter. The shared library file is located [here](nvmsgconv/libnvds_msgconv.so).
 
-# Build
+# Build for x86 dGPU system
 
 Run the following commands from project root
 
-Modify the below command with the cuda version installed in the docker container
+Modify the below command with the cuda version installed in the docker container. To check the CUDA version inside the docker container you can use `nvcc --version` command.
 
 ```bash
 export CUDA_VER=<cuda_version>
