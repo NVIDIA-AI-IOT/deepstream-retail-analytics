@@ -24,7 +24,7 @@ source:
   # location: ../../../../samples/streams/sample_720p.h264
   # location: /work/retail_cropped.264
   # location: /work/data/trimmed.h264
-  location: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/ds-retail-iva/files/0001_compressed.h264
+  location: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/deepstream-retail-analytics/files/0001_compressed.h264
   # location: rtsp://
 
 streammux:
@@ -47,7 +47,7 @@ streammux:
 #   enable-batch-process: 1
 
 msgconv:
-  msg2p-lib: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/ds-retail-iva/nvmsgconv/libnvds_msgconv.so
+  msg2p-lib: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/deepstream-retail-analytics/nvmsgconv/libnvds_msgconv.so
   payload-type: 0
   msg2p-newapi: 0
   frame-interval: 30
@@ -62,5 +62,5 @@ sink:
   sync: 1
 
 filesink:
-  location: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/deepstream-retail-video-analytics/retail_output.mp4
+  location: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/deepstream-retail-analytics/retail_output.mp4
   sync: 0

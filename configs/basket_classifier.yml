@@ -6,8 +6,8 @@ property:
   model-color-format: 1
 
   # Model specific paths. These need to be updated for every classification model.
-  labelfile-path: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/ds-retail-iva/files/basket_classifier_labels.txt
-  tlt-encoded-model: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/ds-retail-iva/files/basketClassifier.etlt
+  labelfile-path: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/deepstream-retail-analytics/files/basket_classifier_labels.txt
+  tlt-encoded-model: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/deepstream-retail-analytics/files/basketClassifier.etlt
   # model-engine-file: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/ds-retail-iva/files/basketClassifier.etlt_b1_gpu0_fp32.engine
   tlt-model-key: nvidia_tlt
   infer-dims: 3;224;224 # where c = number of channels, h = height of the model input, w = width of model input
