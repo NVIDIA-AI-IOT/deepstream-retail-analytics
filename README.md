@@ -1,4 +1,3 @@
-# New Document
 # Description
 
 This is a sample application to perform real-time Intelligent Video Analytics (IVA) in a brick and mortar retail environment using NVIDIA DeepStream, TAO, and pre-trained models. DeepStream is used to run DL inference on a video feed inside a store to detect and track customers, and identify whether the detected persons are carrying shopping baskets. The inference output of this Computer Vision (CV) pipeline is streamed, using Kafka, to a Time-Series Database (TSDB) for archival and further processing. A Django app serves a REST-ful API to query insights based on the inference data. We also demonstrate a sample front-end dashboard to quickly visualize the various Key Performance Indicators (KPIs) available through the Django app.
