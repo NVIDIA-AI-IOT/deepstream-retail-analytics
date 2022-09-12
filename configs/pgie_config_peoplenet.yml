@@ -26,9 +26,9 @@ property:
   infer-dims: 3;544;960
   uff-input-order: 0
   tlt-model-key: tlt_encode
-  tlt-encoded-model: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/ds-retail-iva/files/resnet34_peoplenet_pruned.etlt
+  tlt-encoded-model: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/deepstream-retail-analytics/files/resnet34_peoplenet_pruned.etlt
   # model-engine-file: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/ds-retail-iva/files/peoplenet/resnet34_peoplenet_pruned.etlt_b1_gpu0_fp32.engine
-  labelfile-path: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/ds-retail-iva/files/labels.txt
+  labelfile-path: /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps/deepstream-retail-analytics/files/labels.txt
   uff-input-blob-name: input_1
   force-implicit-batch-dim: 1
   batch-size: 1
