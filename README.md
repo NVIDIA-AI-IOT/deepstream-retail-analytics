@@ -28,7 +28,7 @@ What is this DeepStream pipeline made of?
 # Application Architecture
 
 
-   <center> <img src="./media/arch.png" width=500></center>
+   <center> <img src="./media/retail-iva-arch.png" width=500></center>
 
 
 # Quick Start
