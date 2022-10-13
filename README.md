@@ -80,9 +80,11 @@ What is this DeepStream pipeline made of?
 
     ```bash
     wget https://raw.githubusercontent.com/confluentinc/cp-all-in-one/7.2.1-post/cp-all-in-one/docker-compose.yml
-    docker compose up -d
+    docker-compose up -d
     ```
     * Verify if all the containers started successfully by running `docker ps`
+
+    ![](./media/docker_container_ps.png)
 
 7. Create a kafka-topic that will be used to receive messages sent by the DeepStream app
 
@@ -106,11 +108,18 @@ What is this DeepStream pipeline made of?
 
 # Getting Started
 
-1. If you are using DeepStream via a docker container as mentioned in the instructions above, execute below commands from within the container. The above command to start the docker container will open the terminal of the DeepStream docker container. You can access the terminal by running
+1. If you are using DeepStream via a docker container as mentioned in the instructions above, execute the following command to open the terminal of the DeepStream docker container if it's not already open. Otherwise, skip this step.
 
     ```bash
     docker exec -it <container_id> /bin/bash
     ```
+
+    You can locate the container id by running the following command:
+
+    ```bash
+    docker container ps
+    ```
+    ![](./media/deepstream_container.png)
 
 2. Clone the repo in $DS_SDK_ROOT/sources/apps/sample_apps/
     ```bash
