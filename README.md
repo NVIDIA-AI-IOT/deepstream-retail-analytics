@@ -124,7 +124,7 @@ What is this DeepStream pipeline made of?
 2. Clone the repo in $DS_SDK_ROOT/sources/apps/sample_apps/
     ```bash
     cd /opt/nvidia/deepstream/deepstream-6.1/sources/apps/sample_apps
-    git clone https://gitlab-master.nvidia.com/techmarketing/deepstream-retail-analytics.git
+    git clone https://github.com/NVIDIA-AI-IOT/deepstream-retail-analytics.git
     cd deepstream-retail-analytics
     git lfs pull
     ```
